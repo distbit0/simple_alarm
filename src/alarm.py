@@ -20,7 +20,6 @@ alarmFile = Path(getAbsPath("../alarm.wav"))
 
 class Timer:
     def __init__(self):
-        self.timer_file = Path(getAbsPath('../tmp/.timer_info'))
         self.pause_file = Path(getAbsPath('../tmp/.timer_pause'))
         self.kill_file = Path(getAbsPath('../tmp/.timer_kill'))
         self.out_file = Path(getAbsPath('../tmp/OUT.txt'))  # Use absolute path
