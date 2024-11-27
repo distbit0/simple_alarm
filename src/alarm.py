@@ -15,7 +15,7 @@ from load_dotenv import load_dotenv
 load_dotenv()
 
 
-alarmFile = Path(getAbsPath("alarm.wav"))
+alarmFile = Path(getAbsPath("../alarm.wav"))
 
 
 class Timer:
