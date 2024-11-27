@@ -20,10 +20,10 @@ alarmFile = Path(getAbsPath("alarm.wav"))
 
 class Timer:
     def __init__(self):
-        self.timer_file = Path(getAbsPath('tmp/.timer_info'))
-        self.pause_file = Path(getAbsPath('tmp/.timer_pause'))
-        self.kill_file = Path(getAbsPath('tmp/.timer_kill'))
-        self.out_file = Path(getAbsPath('tmp/OUT.txt'))  # Use absolute path
+        self.timer_file = Path(getAbsPath('../tmp/.timer_info'))
+        self.pause_file = Path(getAbsPath('../tmp/.timer_pause'))
+        self.kill_file = Path(getAbsPath('../tmp/.timer_kill'))
+        self.out_file = Path(getAbsPath('../tmp/OUT.txt'))  # Use absolute path
 
     def parse_time(self, time_str: str) -> int:
         """Convert time string (e.g., '1h30m') to seconds"""
