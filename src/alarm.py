@@ -65,6 +65,9 @@ class Timer:
         # Check if kill flag exists and remove it
         if self.kill_file.exists():
             self.kill_file.unlink()
+        
+        if self.pause_file.exists():
+            self.pause_file.unlink()
             
         start_time = datetime.now()
         total_paused_duration = 0
